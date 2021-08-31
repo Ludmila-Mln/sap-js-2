@@ -3,7 +3,17 @@
 <head>
     <title>Howework Game</title>
 <style>
-    #myButton{
+    body{
+    padding: 10px;
+    background-color: rgb(165, 128, 199);
+    border-radius: 20px;
+    margin: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    }
+    button{
     padding: 25px;
     color: yellow;
     background-color: rgb(150, 77, 219);
@@ -12,7 +22,7 @@
     border: 10px solid rgb(221, 214, 111);
     display: flex;
     font-size: medium;
-   
+    cursor: pointer;
     }
 
     h1{
@@ -25,17 +35,17 @@
     display: flex;
     justify-content: center;
     }
-
-    body{
-    padding: 10px;
-    background-color: rgb(165, 128, 199);
-    border-radius: 20px;
-    margin: 20px;
-    border: 1px solid rgb(255, 255, 255);
+    #myPoints{
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid rgb(228, 18, 18);
+    border-radius: 50px;
+    color: rgb(25, 16, 34);
+    background-color:rgb(51, 226, 212);
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    justify-content: space-between;
     }
+
 
 
 </style>    
@@ -44,8 +54,11 @@
 
 <body>
     <h1><strong>Catch a star, make a wish</strong></h1>
-   <button id="myButton">STAR</button>
+    <button id="myButton">STAR</button>
+<h3> GOOD JOB! </h3>
+   <input type="text" id="myPoints">
 
+</input>
 
     <script src="game.js"></script>
 </body>
